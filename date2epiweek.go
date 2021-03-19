@@ -76,7 +76,7 @@ func mainWithExit() (exitstatus int) {
 		}
 		epi := epiweek.NewEpiweek(date)
 		_, week := epi.Epiweek()
-		fmt.Printf("%s - %d\n", date, week)
+		fmt.Printf("%d\n", week)
 	}
 	if err = scanner.Err(); err != nil {
 		exitstatus = 1
